@@ -1,0 +1,9 @@
+[submodule "glm"]
+	path = glm
+	url = https://gitee.com/github-transport/glm.git
+[submodule "eigen"]
+	path = eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "rapidobj"]
+	path = rapidobj
+	url = https://github.com/guybrush77/rapidobj.git

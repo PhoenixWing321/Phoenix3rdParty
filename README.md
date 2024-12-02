@@ -20,11 +20,20 @@
 
 - rapidobj
   - https://github.com/guybrush77/rapidobj
+
+
 ```
 git submodule add https://gitlab.com/libeigen/eigen.git
 git submodule add https://gitee.com/github-transport/glm.git
-git submodule add https://github.com/guybrush77/rapidobj
-git submodule add https://github.com/gabime/spdlog
+git submodule add https://github.com/guybrush77/rapidobj.git
+git submodule add https://github.com/gabime/spdlog.git
+
+- 希望添加同时，不要检出，下面2句都没有成功
+git submodule add --no-checkout https://gitlab.com/libeigen/eigen.git
+git submodule add --no-fetch https://github.com/gabime/spdlog.git
+
+# CHECKOUT
+git submodule update --init
 
 
 ```
