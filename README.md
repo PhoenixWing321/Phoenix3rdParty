@@ -13,6 +13,7 @@
   - url: https://github.com/nlohmann/json.git
 
 - glm
+  - https://github.com/g-truc/glm.git
   - https://gitee.com/github-transport/glm.git
 
 - Eigen
@@ -66,3 +67,18 @@ workspace
         └──Eigen/Dense
 ```
 
+# Cmake Build
+
+## windows Steps 编译步骤
+- vscode DO NOT use Ninja tools
+- Use VsCode Cmake Tools to initial Build folder
+- use `bldAll.bat` to build all, following is the output libs
+  - .\build\glm\glm\Debug\glm.lib
+  - .\build\glm\glm\Release\glm.lib
+- run `linkPublish.bat` to link libs to publish folder
+  - publish\Debug\glm.lib
+  - publish\Debug\CPUPathTracing.lib
+  - publish\Debug\PhoenixMath.lib
+  - publish\Release\glm.lib
+  - publish\Release\CPUPathTracing.lib
+  - publish\Release\PhoenixMath.lib
