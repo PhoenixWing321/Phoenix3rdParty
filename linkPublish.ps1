@@ -1,6 +1,6 @@
 # debug
 Set-Location -Path "$PSScriptRoot\publish\Debug"
-Remove-Item -Path glm.lib -ErrorAction SilentlyContinue
+Remove -Item -Path glm.lib -ErrorAction SilentlyContinue
 Remove-Item -Path PhoenixMath.lib -ErrorAction SilentlyContinue
 Remove-Item -Path CPUPathTracing.lib -ErrorAction SilentlyContinue
 New-Item -ItemType SymbolicLink -Path glm.lib -Target "$PSScriptRoot\build\glm\glm\Debug\glm.lib"
