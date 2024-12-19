@@ -1,0 +1,5 @@
+files:
+  - a.txt
+  - b.txt
+in: aaaa
+out: bbbb

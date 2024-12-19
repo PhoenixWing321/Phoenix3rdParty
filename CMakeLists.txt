@@ -12,3 +12,4 @@ add_subdirectory(rapidobj)
 # test 
 enable_testing() 
 add_subdirectory(test/Eigen)
+add_subdirectory(test/json)
